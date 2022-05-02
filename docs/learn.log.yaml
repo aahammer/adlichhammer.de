@@ -15,8 +15,13 @@ Astro
 Github
   add .vscode/ to .gitignore
   with UI
-    git add files
-    git commit -m "inital release"
-
-git config --get remote.origin.url
-git push
+    git add *
+    git commit -m 'inital release based on astro minimal app'
+    git push --set-upstream origin development
+  in github
+    add new default branch master
+    update local repo
+      git branch -m development master
+      git fetch origin
+      git branch -u origin/master master
+      git remote set-head origin -a
