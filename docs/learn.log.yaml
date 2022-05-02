@@ -50,5 +50,11 @@ Add netlify test function (without form)
   add netlify.toml 
     function directory (convenience)
     cross request rule for local testing
-
+  netlify dev
+  add & commit & push & merge
+Add maillazy function to send mails
+  npm install mailazy-node
+  npm install jsonschema
+  netlify dev
+  add & commit & push & merge
 
