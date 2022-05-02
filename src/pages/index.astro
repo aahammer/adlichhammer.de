@@ -1,17 +1,30 @@
 ---
 
-import TestSvelte from  "../components/Test.svelte"
+import Head from '../layouts/Head.astro'
+import Navigation from '../layouts/Navigation.astro'
+import Hero from '../layouts/Hero.astro'
+import Qualification from '../layouts/Qualification.astro'
+import Service from '../layouts/Service.astro'
+import Footer from '../layouts/Footer.astro'
+
+
 
 ---
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-		<TestSvelte client:load/>
-	</body>
+
+<html>
+ 
+    <Head/>
+
+  <body>
+
+    <Navigation/>
+    <Hero/>
+    <Qualification/>
+    <Service/>
+    <Footer>
+
+
+  </body>
+
 </html>
 
