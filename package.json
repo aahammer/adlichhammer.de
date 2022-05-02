@@ -14,5 +14,9 @@
     "astro": "^1.0.0-beta.20",
     "netlify-cli": "^10.1.0",
     "svelte": "^3.48.0"
+  },
+  "dependencies": {
+    "jsonschema": "^1.4.0",
+    "mailazy-node": "^0.2.0"
   }
 }
