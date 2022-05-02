@@ -1,22 +1,47 @@
-Github
-  create empty github repo
-  git clone https://github.com/adlichhammer/adlichhammer.de.git
-  git checkout -b development
-  git status
-Astro
-  npm init astro (minimal)
-  npm install
-  npm run dev
-  delete files
-    sandbox.config.json
-    .stackblitysrc
-    .npmrc
-    .tsconfig.json
-Github
-  add .vscode/ to .gitignore
-  with UI
-    git add files
-    git commit -m "inital release"
+Create Basic Astro Hello World on netlify
+  Github
+    create empty github repo
+    git clone https://github.com/adlichhammer/adlichhammer.de.git
+    git checkout -b development
+    git status
+  Astro
+    npm init astro (minimal)
+    npm install
+    npm run dev
+    delete files
+      sandbox.config.json
+      .stackblitysrc
+      .npmrc
+      .tsconfig.json
+  Github
+    add .vscode/ to .gitignore
+    with UI
+      git add *
+      git commit -m 'inital release based on astro minimal app'
+      git push --set-upstream origin development
+    in github
+      add new default branch master
+      update local repo
+        git branch -m development master
+        git fetch origin
+        git branch -u origin/master master
+        git remote set-head origin -a
+  Netlify
+    Link repo
+Add tailwind & svelte component and use development branch
+  Tailwind
+    npx astro add tailwind
+        https://github.com/withastro/astro/tree/main/packages/integrations/tailwind
+        add to astro.config.mjs
+        npm install --save-dev @astrojs/tailwind 
+        generate a minimal ./tailwind.config.cjs file
+    Optional for specific content
+      npm install -D @tailwindcss/form  
+  Svelte
+    npx astro add svelte
+      add to astro.config.mjs
+      npm install --save-dev @astrojs/svelte svelte 
+  Git
+    git checkout -b development
+    git push
 
-git config --get remote.origin.url
-git push
