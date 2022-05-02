@@ -45,4 +45,10 @@ Add tailwind & svelte component and use development branch
     git checkout -b development
     git push --set-upstream origin development
     git push
+Add netlify test function (without form)
+  npm install netlify-cli --save-dev
+  add netlify.toml 
+    function directory (convenience)
+    cross request rule for local testing
+
 
