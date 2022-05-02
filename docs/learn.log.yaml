@@ -43,5 +43,6 @@ Add tailwind & svelte component and use development branch
       npm install --save-dev @astrojs/svelte svelte 
   Git
     git checkout -b development
+    git push --set-upstream origin development
     git push
 
