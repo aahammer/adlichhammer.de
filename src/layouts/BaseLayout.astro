@@ -1,0 +1,26 @@
+---
+
+import Head from './Head.astro'
+import Navigation from './Navigation.astro'
+import Footer from './Footer.astro'
+
+---
+
+
+
+<html>
+ 
+    <Head/>
+
+  <body>
+
+    <Navigation/>
+    <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 py-16">
+        <slot/>
+    </div>
+    <Footer/> 
+
+  </body>
+
+</html>
+

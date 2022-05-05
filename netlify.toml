@@ -1,7 +1,17 @@
 [functions]
     directory = "functions/"
 
-#[[headers]]
-#  for = "/*"
-#  [headers.values]
-#    Access-Control-Allow-Origin = "*"
+[dev]
+  command = "npm run dev"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[[headers]]
+  for = "*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+
+

@@ -39,6 +39,12 @@ const supportedMethods = ['GET']
 exports.handler = async (event) => {
 
 
+    return {
+        statusCode: 200,
+        body: JSON.stringify({ message: "Hello World" }),
+        headers: {"Access-Control-Allow-Origin": "*"}
+      }
+
 
 
     const validationResult = validate(event.queryStringParameters, schema)
@@ -77,6 +83,7 @@ exports.handler = async (event) => {
                 return {
                 statusCode: 500,
                 body: JSON.stringify({ message: JSON.stringify(response.error)}),
+                headers: {"Access-Control-Allow-Origin": "*"}
                 }
             }
         
@@ -86,6 +93,7 @@ exports.handler = async (event) => {
             return {
                 statusCode: 500,
                 body: JSON.stringify({ message:  JSON.stringify(e)}),
+                headers: {"Access-Control-Allow-Origin": "*"}
                 }
         } 
 
@@ -93,6 +101,7 @@ exports.handler = async (event) => {
         return {
             statusCode: 202,
             body: JSON.stringify({ message: JSON.parse(response).message }),
+            headers: {"Access-Control-Allow-Origin": "*"}
             }
 
     }
@@ -100,6 +109,7 @@ exports.handler = async (event) => {
     return {
         statusCode: 500,
         body: JSON.stringify({ message: "something went wrong"}),
+        headers: {"Access-Control-Allow-Origin": "*"}
       }
 
 
