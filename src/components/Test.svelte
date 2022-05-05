@@ -8,4 +8,4 @@
 
 </script>
 
-<button class="bg-sky-600 rounded-sm m-2" on:click={add}> Count: {count} </button>
+<button class="bg-sky-600 rounded-sm m-2" on:click={() => add()}> Count: {count} </button>

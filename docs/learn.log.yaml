@@ -57,4 +57,11 @@ Add maillazy function to send mails
   npm install jsonschema
   netlify dev
   add & commit & push & merge
+Add contact form
+  Svelte
+    npm install felte
+    npm install @felte/reporter-svelte
+  Tailwind
+    npm install -D @tailwindcss/forms
+
 

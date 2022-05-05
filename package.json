@@ -11,11 +11,14 @@
   "devDependencies": {
     "@astrojs/svelte": "^0.1.2",
     "@astrojs/tailwind": "^0.2.1",
+    "@tailwindcss/forms": "^0.5.0",
     "astro": "^1.0.0-beta.20",
     "netlify-cli": "^10.1.0",
     "svelte": "^3.48.0"
   },
   "dependencies": {
+    "@felte/reporter-svelte": "^1.1.1",
+    "felte": "^1.2.0",
     "jsonschema": "^1.4.0",
     "mailazy-node": "^0.2.0"
   }
