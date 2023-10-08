@@ -1,5 +1,5 @@
 const MailazyClient = require('mailazy-node');
-const client = new MailazyClient({ accessKey: 'c9fruopopc08t8plo5v0pPoYfJiLNo', accessSecret: 'ByDrNpsiwfOgqybJiPDhlQFsgra.PucPkmcnUA62TrEZsYAby4' });
+const client = new MailazyClient({ accessKey: '', accessSecret: '' });
 
 
 const validate = require('jsonschema').validate
